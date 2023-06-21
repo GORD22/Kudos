@@ -1,0 +1,16 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family-Nrg: "Noah-Rg";
+  --font-family-Nbd: "Noah-Bd";
+  --font-family-alumna: "Alumna";
+  --content-width: 1110px;
+  --container-offset: 15px;
+  --offset: 30px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --light-color: #fff;
+  --gravel-color: #4a4b4d;
+}

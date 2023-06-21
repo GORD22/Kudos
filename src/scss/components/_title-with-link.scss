@@ -1,0 +1,64 @@
+.title-with-link {
+
+    @include for-desktop {
+        margin-top: 40px;
+    }
+
+    margin-top: 60px;
+    margin-bottom: 45px;
+    position: relative;
+
+    &__title {
+        order: 0;
+        margin: 0;
+
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 60px;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--gravel-color);
+    }
+
+    &__link {
+        @include tablet {
+            right: 47%;
+            bottom: -945px;
+        }
+
+        @include small-tablet {
+            right: 45%;
+            bottom: -771px;
+        }
+
+        @include big-mobile {
+            right: 45%;
+            bottom: -495px;
+        }
+
+        @include mobile {
+            right: 40%;
+            bottom: -400px;
+        }
+
+
+
+        position: absolute;
+        right: 20px;
+        bottom: 5px;
+
+        padding-right: 24px;
+        background-image: url(../../img/arrow-right.png);
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: 75%;
+
+        font-size: 24px;
+        line-height: 30px;
+        color: var(--gravel-color);
+
+        & span {
+            text-decoration-line: underline;
+        }
+    }
+}

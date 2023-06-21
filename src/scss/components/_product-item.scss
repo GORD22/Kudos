@@ -1,0 +1,112 @@
+.product-item {
+    position: relative;
+    width: 100%;
+    max-width: 336px;
+    min-height: 515px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 30px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(201, 198, 192, 0.5);
+    border-radius: 10px;
+
+    &__hit-label {
+        position: absolute;
+        z-index: 10;
+        top: 25px;
+        left: 21px;
+
+        background: #F1C85C;
+        border-radius: 15px;
+        padding-top: 9px;
+        padding-right: 16px;
+        padding-bottom: 9px;
+        padding-left: 11px;
+
+        & span {
+            padding-left: 21px;
+            background-image: url(../../img/svg/sale.svg);
+            background-repeat: no-repeat;
+            background-position: center left;
+
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 14px;
+            text-transform: uppercase;
+
+            color: var(--gravel-color);
+
+        }
+    }
+
+    &__img-wrapper {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 254px;
+
+        & img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__descr {
+
+        @include for-desktop {
+            max-width: 220px;
+
+
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        margin: 0;
+        margin-top: 15px;
+        max-width: 295px;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+
+        color: var(--gravel-color);
+    }
+
+    &__price {
+        margin: 0;
+        margin-top: 10px;
+
+        font-size: 28px;
+        line-height: 35px;
+        text-align: center;
+        color: var(--gravel-color);
+    }
+
+    &__btn-add {
+        width: 100%;
+        height: 66px;
+        background: var(--gravel-color);
+
+        @include flex-all-center;
+
+        & svg {
+            margin-right: 11px;
+            width: 31px;
+            height: 31px;
+
+            fill: var(--light-color);
+        }
+
+        & span {
+            font-size: 26px;
+            line-height: 32px;
+            color: #FFFFFF;
+        }
+    }
+}

@@ -1,0 +1,137 @@
+.catalog-section {
+
+    @include tablet {
+        padding: 0 20px;
+    }
+
+    padding: 0 48px;
+
+
+
+    &__list {
+        @include tablet {
+            @include flex-all-center;
+            flex-wrap: wrap;
+        }
+
+        @include flex-all-sb;
+    }
+
+    &__item {
+
+        @include for-desktop {
+            margin-bottom: 35px;
+
+            padding-top: 0;
+            min-height: 395px;
+        }
+
+        &:last-child {
+            @include big-desktop {
+                display: none;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-right: 35px;
+
+            @include tablet {
+                margin-right: 0;
+            }
+        }
+
+        &:not(:nth-child(2)) {
+            @include tablet {
+                margin-right: 35px;
+            }
+            @include big-mobile {
+                margin-right: 30px;
+            }
+        }
+
+        &:nth-last-child(2) {
+            @include big-desktop {
+                margin-right: 0;
+            }
+        }
+
+        @include small-tablet {
+            max-width: 250px;
+            min-height: 250px;
+            padding-bottom: 25px;
+
+        }
+
+        @include big-mobile {
+            max-width: 175px;
+            min-height: 175px;
+            padding-bottom: 11px;
+        }
+
+        @include mobile {
+            max-width: 125px;
+            min-height: 125px;
+        }
+
+        cursor: pointer;
+        width: 100%;
+        max-width: 336px;
+        min-height: 427px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        padding-top: 30px;
+        padding-bottom: 41px;
+
+        background: #FFFFFF;
+        box-shadow: 0px 0px 15px rgba(201, 198, 192, 0.5);
+        border-radius: 10px;
+
+        &__img-wrapper {
+
+            @include big-mobile {
+                height: 145px;
+            }
+
+            @include mobile {
+                height: 100px;
+            }
+
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 254px;
+
+            & img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        &__title {
+            @include big-mobile {
+                font-size: 16px;
+                line-height: 20px;
+                padding-right: 20px;
+                background-size: contain;
+            }
+
+            margin: 0 auto;
+            max-width: 144px;
+            padding-right: 37px;
+
+            background-image: url(../../img/arrow-in-circle.png);
+            background-repeat: no-repeat;
+            background-position: center right;
+
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 40px;
+            color: var(--gravel-color);
+        }
+    }
+}

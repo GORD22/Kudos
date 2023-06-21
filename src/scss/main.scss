@@ -1,0 +1,19 @@
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+@import "../../node_modules/swiper/swiper-bundle";
+@font-face {
+    font-family: 'Alumna';
+    src: url(../fonts/ALS_Alumna.ttf);
+}
+
+@import "./components/title-with-link";
+@import "./components/product-item";
+
+@import "./components/header";
+@import "./components/hero";
+@import "./components/catalog-section";
+@import "./components/new-section";
+@import "./components/footer";
