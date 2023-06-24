@@ -36,6 +36,10 @@ a {
   overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
 }
 
+.main {
+  border-top: 1px solid var(--gravel-color);
+}
+
 .is-hidden {
   display: none !important;
   /* stylelint-disable-line declaration-no-important */
@@ -55,6 +59,7 @@ a {
 }
 
 .input-reset {
+  cursor: pointer;
   -webkit-appearance: none;
   appearance: none;
   border: none;
@@ -84,6 +89,10 @@ a {
   margin: 0 auto;
   padding: 0 var(--container-offset);
   max-width: var(--container-width);
+  
+  &_catalog {
+    padding-top: 33px;
+  }
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -112,4 +121,9 @@ a {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: var(--offset);
+
+  @include mobile {
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 30px;
+  }
 }

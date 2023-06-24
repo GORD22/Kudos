@@ -1,0 +1,95 @@
+.logistic {
+    padding-top: 33px;
+    padding-bottom: 60px;
+
+    &__page-title {
+        @include small-tablet {
+            margin-bottom: 20px;
+        }
+
+        @include mobile {
+            margin-bottom: 11px;
+            
+            grid-column: 8 span;
+        }
+
+        margin-bottom: 35px;
+
+        grid-column: 12 span;
+    }
+
+    &__subtitle {
+        @include small-tablet {
+            font-size: 24px;
+        }
+
+        @include mobile {
+            grid-column: 8 span;
+
+            font-size: 20px;
+        }
+
+        margin: 0;
+        margin-bottom: 30px;
+
+        grid-column: 12 span;
+
+        font-weight: 700;
+        font-size: 28px;
+        color: var(--gravel-color);
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__img-wrapper {
+        @include tablet {
+            height: 300px;
+        }
+
+        @include small-tablet {
+            margin-right: auto;
+            margin-left: auto;
+            grid-column: 12 span;
+            max-width: 360px;
+            height: 220px;
+        }
+
+        @include mobile {
+            margin-top: 20px;
+
+            grid-column: 8 span;
+            max-width: none;
+        }
+
+        margin-top: 50px;
+
+        grid-column: 6 span;
+
+        height: 360px;
+
+        border-radius: 10px;
+    }
+
+    .btn-go-catalog {
+        @include small-tablet {
+            margin-right: auto;
+            margin-left: auto;
+            grid-column: 12 span;
+            max-width: 360px;
+        }
+
+        @include mobile {
+            grid-column: 8 span;
+        }
+
+        margin-top: 30px;
+
+        grid-column: 5 / 4 span;
+        height: 51px;
+        border-radius: 8px;
+
+        & span {
+            font-size: 20px;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+.pagination {
+    @include tablet {
+        grid-column: 8 span;
+    }
+
+    @include small-tablet {
+        grid-column: 2 / 10 span;
+    }
+
+    @include big-mobile {
+        grid-column: 12 span;
+    }
+
+    @include mobile {
+        grid-column: 8 span;
+    }
+
+    padding-top: 30px;
+    padding-bottom: 60px;
+    grid-column: 9 span;
+    display: flex;
+    justify-content: center;
+
+    &__item {
+        @include big-mobile {
+            width: 40px;
+            height: 40px;
+        }
+
+        cursor: pointer;
+        @include flex-all-center;
+
+        width: 46px;
+        height: 46px;
+
+        border-radius: 8px;
+        background-color: var(--light-color);
+        box-shadow: 0px 0px 9px 0px rgba(201, 198, 192, 0.50);
+
+        font-size: 20px;
+        color: var(--gravel-color);
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        transition: box-shadow 0.3s ease-in-out;
+
+        @include hover {
+            box-shadow: 0px 0px 9px 5px rgba(201, 198, 192, 0.5);
+        }
+
+    }
+
+    .current {
+        background-color: var(--gravel-color);
+        color: var(--light-color);
+    }
+}

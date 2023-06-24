@@ -1,0 +1,19 @@
+.color-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 10px;
+
+    &__item {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background-color: #F1C85C;
+
+        &:checked {
+            background-image: url(../../img/svg/tick-color-check.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: fill;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.main-btn {
+    @include flex-all-center;
+
+    width: 100%;
+
+    background: var(--gravel-color);
+
+    transition: background-color 0.3s ease-in-out;
+
+    & svg {
+        fill: var(--light-color);
+    }
+
+    & span {
+        color: #FFFFFF;
+    }
+
+    @include hover {
+        background-color: #000;
+    }
+}

@@ -1,0 +1,145 @@
+.about {
+    @include small-tablet {
+        padding-bottom: 40px;
+    }
+
+    padding-top: 33px;
+    padding-bottom: 70px;
+
+    &__page-title {
+        @include mobile {
+            grid-column: 8 span;
+        }
+
+        margin-bottom: 8px;
+
+        grid-column: 12 span;
+    }
+
+    &__img-wrapper {
+        @include for-desktop {
+            grid-column: 4 span;
+        }
+
+        @include tablet {
+            order: 2;
+            margin: 0 auto;
+            grid-column: 2 / 10 span;
+            max-width: 540px;
+            height: 300px;
+        }
+
+        @include small-tablet {
+            max-width: 420px;
+            height: 240px;
+        }
+
+        @include big-mobile {
+            max-width: 300px;
+            height: 200px;
+        }
+
+        @include mobile {
+            grid-column: 8 span;
+
+            max-width: 280px;
+            height: 190px;
+        }
+
+        grid-column: 6 span;
+        border-radius: 10px;
+        height: 100%;
+
+        &_first {
+            @include tablet {
+                order: 0;
+            }
+        }
+    }
+
+    &__info {
+        @include tablet {
+            row-gap: 15px;
+        }
+
+        @include mobile {
+            grid-column: 8 span;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+        }
+
+        grid-column: 12 span;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: var(--offset);
+
+        &__title {
+
+            @include mobile {
+                max-width: 210px;
+            }
+
+            margin: 0;
+            margin-bottom: 17px;
+
+            font-weight: 700;
+            font-size: 20px;
+            color: var(--gravel-color);
+        }
+
+        & p {
+            @include tablet {
+                font-size: 16px;
+            }
+
+            @include mobile {
+                font-size: 14px;
+            }
+
+            margin: 0;
+
+            &:not(:last-child) {
+                margin-bottom: 12px;
+            }
+
+            font-size: 18px;
+            line-height: 132%;
+            color: var(--gravel-color);
+        }
+
+        &__small-paragraph {
+            @include for-desktop {
+                grid-column: 8 span;
+            }
+
+            @include tablet {
+                order: 2;
+                grid-column: 12 span;
+            }
+
+            @include mobile {
+                grid-column: 8 span;
+            }
+
+            grid-column: 6 span;
+
+            &:first-child {
+                @include tablet {
+                    order: 1;
+                }
+            }
+        }
+
+        &__big-paragraph {
+            @include tablet {
+                order: 2;
+            }
+
+            @include mobile {
+                grid-column: 8 span;
+            }
+
+            grid-column: 12 span;
+        }
+    }
+}

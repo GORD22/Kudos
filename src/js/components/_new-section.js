@@ -30,8 +30,5 @@ const swiperNew = new Swiper(".new-section__list", {
             slidesPerGroup: 5,
         }
     },
-
-
-
 });
 

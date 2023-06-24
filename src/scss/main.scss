@@ -9,6 +9,13 @@
     src: url(../fonts/ALS_Alumna.ttf);
 }
 
+@import "./components/main-btn";
+@import "./components/img-wrapper";
+@import "./components/breadcrumb";
+@import "./components/color-list";
+@import "./components/page-title";
+@import "./components/answer";
+
 @import "./components/title-with-link";
 @import "./components/product-item";
 
@@ -17,3 +24,18 @@
 @import "./components/catalog-section";
 @import "./components/new-section";
 @import "./components/footer";
+
+@import "./components/filter";
+@import "./components/place-plus-sort";
+@import "./components/product-list";
+@import "./components/pagination";
+
+@import "./components/product";
+
+@import "./components/gallery";
+
+@import "./components/about";
+
+@import "./components/logistic";
+
+@import "./components/conditions";

@@ -1,0 +1,19 @@
+.page-title {
+    @include tablet {
+        text-align: center;
+    }
+
+    @include mobile {
+        margin-right: auto;
+        margin-left: auto;
+        
+        max-width: 230px;
+    }
+
+    margin: 0;
+
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--gravel-color);
+    text-transform: uppercase;
+}

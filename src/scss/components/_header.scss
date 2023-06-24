@@ -261,7 +261,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        z-index: 10;
+        z-index: 1001;
         width: 100vw;
         height: 100vh;
 
@@ -335,7 +335,6 @@
             overflow: hidden;
             width: 100%;
 
-            transition: max-height 0.8s ease-in-out;
         }
     }
 
@@ -355,7 +354,7 @@
                     height: 7px;
                     transform: rotate(0);
 
-                    transition: transform 0.5s ease-in-out;
+                    transition: transform 0.3s ease-in-out;
                 }
 
                 display: none;
@@ -404,7 +403,7 @@
 }
 
 .list-open {
-    max-height: 242px;
+    max-height: unset;
     .header-bottom__popup__item {
         &:first-child {
             & svg {

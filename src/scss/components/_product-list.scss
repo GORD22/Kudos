@@ -1,0 +1,150 @@
+.product-list {
+    @include tablet {
+        grid-template-columns: repeat(8, 1fr);
+        grid-column: 8 span;
+    }
+
+    @include small-tablet {
+        grid-column: 2 / 10 span;
+
+        padding-top: 30px;
+    }
+
+    @include big-mobile {
+        grid-column: 12 span;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    @include mobile {
+        grid-column: 8 span;
+    }
+
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+
+    grid-column: 9 span;
+    padding-top: 20px;
+
+}
+
+.catalog_product-item {
+    @include tablet {
+        grid-column: 4 span;
+    }
+
+    @include big-mobile {
+        min-height: 320px;
+        padding-top: 14px;
+    }
+
+    @include mobile {
+        min-height: 213px;
+        padding-top: 4px;
+    }
+
+    cursor: pointer;
+    grid-column: 3 span;
+    max-width: none;
+    min-height: 394px;
+    padding-top: 24px;
+
+    .product-item__hit-label {
+        @include mobile {
+            top: 8px;
+            left: 9px;
+    
+            padding-top: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            padding-left: 18px;
+            border-radius: 5px;
+        }
+
+        top: 18px;
+        left: 14px;
+
+        padding-top: 8px;
+        padding-right: 13px;
+        padding-bottom: 7px;
+        padding-left: 28px;
+
+        & span {
+            font-size: 8px;
+            line-height: 14px;
+        }
+    }
+
+    .product-item__img-wrapper {
+        @include big-mobile {
+            height: 180px;
+        }
+    
+        @include mobile {
+            height: 99px;
+        }
+
+        height: 205px;
+    }
+
+    .product-item__descr {
+        @include small-tablet {
+            font-size: 18px;
+        }
+
+        @include big-mobile {
+            font-size: 14px;
+        }
+
+        @include mobile {
+            font-size: 12px;
+            max-width: 95%;
+        }
+
+        margin-top: 0;
+
+        font-size: 20px;
+    }
+
+    .product-item__price {
+        @include big-mobile {
+            font-size: 20px;
+        }
+
+        margin-top: 0;
+
+        font-size: 24px;
+    }
+
+    .product-item__btn-add {
+        @include mobile {
+            height: 35px;
+        }
+
+        height: 51px;
+
+        & svg {
+            @include mobile {
+                width: 14px;
+                height: 14px;
+            }
+
+            width: 23px;
+            height: 23px;
+        }
+
+        & span {
+            @include big-mobile {
+                font-size: 18px;
+            }
+
+            @include mobile {
+                font-size: 14px;
+            }
+
+            font-size: 20px;
+        }
+    }
+}

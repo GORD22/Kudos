@@ -1,0 +1,37 @@
+.breadcrumb {
+    @include small-tablet {
+        justify-content: center;
+    }
+
+    display: flex;
+
+    &__item {
+        font-size: 14px;
+        color: var(--gravel-color);
+
+        &:not(:last-child)::after {
+            content: '/';
+
+            margin: 0 4px;
+
+            font-size: inherit;
+            color: inherit;
+        }
+
+        &:last-child {
+            font-weight: 700;
+        }
+    }
+
+    &_product {
+        @include small-tablet {
+            margin-bottom: 4px;
+        }
+        margin-bottom: 33px;
+        grid-column: 12 span;
+        
+        @include mobile {
+            grid-column: 8 span;
+        }
+    }
+}

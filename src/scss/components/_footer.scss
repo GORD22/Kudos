@@ -16,6 +16,7 @@
 
         @include mobile {
             margin-left: 10px;
+            grid-column: 4 span;
         }
 
         grid-column: 3 span;
@@ -49,6 +50,9 @@
         @include big-mobile {
             margin-top: 18px;
             grid-column: 12 span;
+        }
+        @include mobile {
+            grid-column: 8 span;
         }
 
         grid-column: 10 / 3 span;
@@ -107,12 +111,17 @@
 
         @include small-tablet {
             grid-column: 9 / 4 span;
-            justify-content: center;
+            justify-content: start;
         }
 
         @include big-mobile {
             margin-top: 18px;
             grid-column: 12 span;
+            justify-content: center;
+        }
+
+        @include mobile {
+            grid-column: 8 span;
         }
 
         margin-bottom: 40px;
@@ -156,6 +165,10 @@
             text-align: center;
         }
 
+        @include mobile {
+            grid-column: 8 span;
+        }
+
         grid-column: 7 span;
         line-height: 20px;
     }
@@ -172,6 +185,10 @@
             grid-column: 12 span;
             max-width: 280px;
             text-align: center;
+        }
+
+        @include mobile {
+            grid-column: 8 span;
         }
 
         grid-column: 10 / 3 span;

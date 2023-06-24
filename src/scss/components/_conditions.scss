@@ -1,0 +1,153 @@
+.conditions {
+    padding-top: 33px;
+    padding-bottom: 60px;
+
+    &__page-title {
+        @include tablet {
+            margin-bottom: 0;
+
+            max-width: none;
+        }
+
+        @include mobile {
+            grid-column: 8 span;
+        }
+
+        margin-bottom: 34px;
+
+        grid-column: 12 span;
+    }
+
+    &__list-title {
+        @include tablet {
+            font-size: 22px;
+        }
+
+        @include big-mobile {
+            margin-top: 20px;
+            margin-bottom: 10px;
+
+            font-size: 20px;
+        }
+
+        @include mobile {
+            grid-column: 8 span;
+        }
+
+        margin-top: 34px;
+        margin-bottom: 18px;
+
+        grid-column: 12 span;
+
+        color: #000;
+        font-size: 24px;
+        font-family: var(--font-family-inter);
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__list-subtitle {
+        @include tablet {
+            font-size: 16px;
+        }
+
+        @include big-mobile {
+            font-size: 14px;
+        }
+
+        @include mobile {
+            grid-column: 8 span;
+        }
+
+        margin: 0;
+        margin-bottom: 13px;
+
+        grid-column: 12 span;
+        font-family: var(--font-family-inter);
+        font-weight: 700;
+        font-size: 18px;
+        color: #000;
+    }
+
+    &__list {
+        @include mobile {
+            grid-column: 8 span;
+        }
+
+        grid-column: 12 span;
+
+        &__item {
+            @include tablet {
+                font-size: 16px;
+                line-height: 23px;
+            }
+
+            @include big-mobile {
+                font-size: 14px;
+                line-height: 18px;
+            }
+
+            font-size: 18px;
+            line-height: 27px;
+            color: #000;
+
+            &:not(:last-child) {
+                @include tablet {
+                    margin-bottom: 5px;
+                }
+
+                @include big-mobile {
+                    margin-bottom: 0;
+                }
+
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .btn-go-catalog {
+        @include small-tablet {
+            margin-right: auto;
+            margin-left: auto;
+            grid-column: 12 span;
+            max-width: 360px;
+        }
+
+        @include mobile {
+            grid-column: 8 span;
+        }
+
+        margin-top: 30px;
+
+        grid-column: 5 / 4 span;
+        height: 51px;
+        border-radius: 8px;
+
+        & span {
+            font-size: 20px;
+        }
+    }
+}
+
+.btn-scroll {
+    @include tablet {
+        display: none;
+    }
+
+    grid-column: 2 span;
+    min-height: 65px;
+
+    padding: 5px 10px;
+
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 15px 0px rgba(201, 198, 192, 0.50);
+
+    font-size: 18px;
+    color: #000;
+
+    &_active {
+        background: #f3f3f3;
+        box-shadow: none;
+    }
+}
